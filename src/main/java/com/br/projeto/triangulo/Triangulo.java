@@ -41,7 +41,20 @@ public class Triangulo extends HttpServlet {
 		int valor2 = Integer.parseInt(request.getParameter("valor2"));
 		int valor3 = Integer.parseInt(request.getParameter("valor3"));
 		
-
+		if(valor1 <= 0 && valor2 <= 0 && valor3 <= 0) {
+			response.getWriter().println("Digite valores validos!");
+			
+		
+		}else if(valor2 <= 0 && valor3 <= 0 || valor1 <= 0 || valor2 <= 0 && valor1 <= 0) {
+			response.getWriter().println(" Isso é uma reta!");
+			
+		
+		}else if(valor1 >0 && valor2 >0 && valor3 <= 0 || valor3 >0 &&  valor1 >0 && valor2 <=0 || valor3 >0 && valor2 >0 && valor1 <=0) {
+			if(valor1 == valor2 && valor2 == valor3 && valor1 == valor2) {
+				response.getWriter().println(" Isso é um Quadrado!");
+				
+		
+		}
 		else{
 				if(valor1 != valor2 && valor2 != valor3 && valor3 != valor1){
 					response.getWriter().println("Isso é um triangulo escaleno!");
