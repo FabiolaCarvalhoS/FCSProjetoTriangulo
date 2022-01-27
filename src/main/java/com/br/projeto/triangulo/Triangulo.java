@@ -53,7 +53,11 @@ public class Triangulo extends HttpServlet {
 			if(valor1 == valor2 && valor2 == valor3 && valor1 == valor2) {
 				response.getWriter().println(" Isso é um Quadrado!");
 				
-		
+			}else {
+			response.getWriter().println(" Isso é um Retangulo!");
+			
+			
+		}
 		}
 		else{
 				if(valor1 != valor2 && valor2 != valor3 && valor3 != valor1){
