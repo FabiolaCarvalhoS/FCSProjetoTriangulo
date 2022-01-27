@@ -36,6 +36,25 @@ public class Triangulo extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
-	}
+		
+		int valor1 = Integer.parseInt(request.getParameter("valor1"));
+		int valor2 = Integer.parseInt(request.getParameter("valor2"));
+		int valor3 = Integer.parseInt(request.getParameter("valor3"));
+		
 
-}
+		else{
+				if(valor1 != valor2 && valor2 != valor3 && valor3 != valor1){
+					response.getWriter().println("Isso é um triangulo escaleno!");
+				}else if(valor1 == valor2 && valor2 == valor3 && valor3 == valor1) {
+					response.getWriter().println(" Isso é um triangulo equilatero!");
+				}else {
+					response.getWriter().println(" Isso é triangulo escaleno!");
+				}
+			}
+	
+			
+			
+		
+		}
+
+	}

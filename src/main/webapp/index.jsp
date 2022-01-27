@@ -48,7 +48,7 @@ h2 {
 
 input{
 background-color:#F6B1C3;
-border: none;
+border: 1px solid white;
 
 }
 
@@ -71,26 +71,20 @@ font-weight: 950;
 		<div class="cantainer" id="triangulo">
 			<h2>Qual o tipo de Triângulo?</h2>
 
-			<form class="formulario">
+			<form class="formulario" method="post" action="Triangulo">
 				<div class="mb-4">
-					<label for="exampleInputValor1" class="form-label">Digite
-						Valor 1: </label> <br>
-					<input type="password" class="form-control" id="exampleInputValor1"
-						aria-describedby="Valor1">
+					<label for="exampleInputValor1" class="form-label"> Valor 1: </label> <br>
+					<input type="text" class="form-control" name="valor1">
 				</div>
 				<br>
 				<div class="mb-4">
-					<label for="exampleInputValor2" class="form-label">Digite
-						Valor 2: </label> <br>
-					<input type="password" class="form-control"
-						id="exampleInputPassword1">
+					<label for="exampleInputValor2" class="form-label"> Valor 2: </label> <br> <input type="text" class="form-control"
+						name="valor2">
 				</div>
 				<br>
 				<div class="mb-4">
-					<label for="exampleInputValor3" class="form-label">Digite
-						Valor 3: </label> <br>
-					<input type="password" class="form-control"
-						id="exampleInputPassword1">
+					<label for="exampleInputValor3" class="form-label"> Valor 3: </label> <br>
+					<input type="text" class="form-control" name="valor3">
 				</div>
 				<br>
 				<button type="reset">Limpar</button>
