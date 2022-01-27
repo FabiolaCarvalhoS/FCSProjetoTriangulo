@@ -65,7 +65,7 @@ public class Triangulo extends HttpServlet {
 				}else if(valor1 == valor2 && valor2 == valor3 && valor3 == valor1) {
 					response.getWriter().println(" Isso é um triangulo equilatero!");
 				}else {
-					response.getWriter().println(" Isso é triangulo escaleno!");
+					response.getWriter().println(" Isso é triangulo isoceles!");
 				}
 			}
 	
